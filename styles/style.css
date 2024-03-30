@@ -57,6 +57,7 @@
   line-height: 1em;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -158,21 +159,13 @@
 }
 
 .card-content {
+  display: grid;
+  gap: 27px; 
   border-top: 2px solid var(--accent-color, #000000);
-  padding-block-start: 25px;
-  padding-block-end: 25px;
-  padding-inline: 25px;
+  padding: 25px;
   font-size: 18px;
   font-variation-settings: 'wght' var( --text_font-weight, 400);
-  line-height: 1.168em;
-}
-
-.card-content > p:first-child {
-  margin-block-end: 27px;
-}
-
-.card-text-width {
-  width: 92%;
+  line-height: 21px;
 }
 
 .section_buttons {
@@ -195,7 +188,6 @@
 
 .card__icon-button:focus {
   outline: none;
-  border: 2px solid transparent;
 }
 
 .card__icon-button:focus-visible {
@@ -279,7 +271,7 @@
   font-family: var(--accent-font, 'PressStart2P', monospace);
   color: var(--accent-color,  #000000);
   font-size: var(--font-size, 14px);
-  line-height: 1.168em;
+  line-height: 1.5em;
   text-transform: uppercase;
 }
 
@@ -314,35 +306,35 @@
   opacity: 0.75;
 }
 
-.card__one-image {
+.filter-sepia {
   filter: sepia(100%);
 }
 
-.card__two-image {
+.filter-brightness {
   filter: brightness(150%);
 }
 
-.card__three-image {
+.filter-opacity-contrast {
   filter: opacity(0.8) contrast(50%);
 }
 
-.card__four-image {
+.filter-blur {
   filter: blur(0.2em);
 }
 
-.card__five-image {
+.filter-grayscale {
   filter: grayscale(0.6);
 }
 
-.card__six-image {
+.filter-invert {
   filter: invert(0.8);
 }
 
-.card__seven-image {
+.filter-saturate {
   filter: saturate(50%);
 }
 
-.card__eight-image {
+.filter-invert-rotate {
   filter: invert(0.3) hue-rotate(90deg);
 }
 
@@ -383,10 +375,6 @@
 .modal__button {
   inline-size: 281px;
 }
-
-.card-text-width {
-  width: 100%;
-} 
 }
 
 
